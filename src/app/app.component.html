@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<div>hello</div>
+<div>{{data | json}}</div>
+<div *ngFor = 'let lst of data'>
+    <li>hello{{lst.name}}</li>
+</div>
