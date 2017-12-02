@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card" *ngFor="let lst of data">
+        <div class="card-body">
+            <h4 class="card-title">{{lst.name}}</h4>
+            <address>{{lst.address.street}},<br>{{lst.address.city}},<br>{{lst.address.zipcode}}</address>
+            <button type="button" class="btn-primary">View Todos</button>
+        </div>
+    </div>
+</div>
+<style>
+    h4 {
+        color: #337ab7;
+    }
+    
+    address {
+        font-style: italic;
+    }
+    
+    button {
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
