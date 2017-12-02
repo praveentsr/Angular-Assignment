@@ -7,13 +7,13 @@ import 'rxjs/add/operator/map';
 
 @Component ({
    selector: 'app-root',
-   template: '<ul><li>{{data | json}}</li></ul>',
+   templateUrl: './app.component.html',
    providers: [ClaritydesignService]
 })
 
 export   class   AppComponent  {
    iClarity: Clarity[];
-   data: Object = {};
+   data: Array<any> = [];
    constructor(private _clarity: ClaritydesignService) {
    }
    

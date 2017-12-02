@@ -1,5 +1,6 @@
-<div>hello</div>
-<div>{{data | json}}</div>
-<div *ngFor = 'let lst of data'>
-    <li>hello{{lst.name}}</li>
+<div class="container">
+    <h2>Clarity Design</h2>
+    <div class="card" *ngFor="let lst of data">
+        <div class="card-body">{{lst.name}}</div>
+    </div>
 </div>
