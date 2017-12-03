@@ -4,20 +4,16 @@ import { ClaritydesignService } from './claritydesign.service';
 import { Http , Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import { Router } from '@angular/router/src/router';
 
 @Component ({
    selector: 'app-root',
    templateUrl: './app.component.html',
-   providers: [ClaritydesignService]
+   styleUrls: ['./app.component.css'],
 })
 
 export   class   AppComponent  {
-   iClarity: Clarity[];
-   data: Array<any> = [];
-   constructor(private _clarity: ClaritydesignService) {
-   }
-   
-   ngOnInit() : void {
-      this._clarity.getclarity().subscribe(claritydata => this.data = claritydata);
-   }
+constructor(){
+    
+}
 } 
