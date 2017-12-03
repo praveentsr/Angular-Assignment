@@ -1,0 +1,8 @@
+<div class="todolist-div">
+    <ul *ngFor=" let todo of todosList ">
+        <li>
+            {{todo.title}}
+        </li>
+    </ul>
+    <button (click)="goBack() ">go back</button>
+</div>

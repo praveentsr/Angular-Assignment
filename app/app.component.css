@@ -1,0 +1,12 @@
+h4 {
+    color: #337ab7;
+}
+
+address {
+    font-style: italic;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+}
